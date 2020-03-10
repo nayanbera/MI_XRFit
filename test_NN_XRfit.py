@@ -124,3 +124,4 @@ edp=pl.insert(edp,0,[z[0]-20,rho[0]],axis=0)
 edp[-1,0]=z[-1]+20
 np.savetxt(dir+fit_fname,np.vstack((q,fit)).transpose())
 np.savetxt(dir+rho_fname,edp)
+print('Done')
