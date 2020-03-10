@@ -1,0 +1,233 @@
+running build
+running config_cc
+unifing config_cc, config, build_clib, build_ext, build commands --compiler options
+running config_fc
+unifing config_fc, config, build_clib, build_ext, build commands --fcompiler options
+running build_src
+build_src
+building extension "xr_ref" sources
+f2py options: []
+f2py:> c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.c
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7
+Reading fortran codes...
+	Reading file 'xr_ref.f90' (format:free)
+Post-processing...
+	Block: xr_ref
+			Block: parratt_born
+			Block: parratt
+			Block: parratt_mat
+			Block: conv_parratt
+Post-processing (stage 2)...
+Building modules...
+	Building module "xr_ref"...
+		Constructing wrapper function "parratt_born"...
+		  parratt_born(q,lambda,d,rho,beta,sigma,rgen,rgenr,[m,n])
+		Constructing wrapper function "parratt"...
+		  parratt(q,lambda,d,rho,beta,rgen,rgenr,[m,n])
+		Constructing wrapper function "parratt_mat"...
+		  parratt_mat(q,lambda,d,rho,beta,rgen,tgen,[m,n])
+		Constructing wrapper function "conv_parratt"...
+		  conv_parratt(q,delq,lambda,d,rho,beta,rgen,[m,n])
+	Wrote C/API module "xr_ref" to file "c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.c"
+  adding 'c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.c' to sources.
+  adding 'c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7' to include_dirs.
+copying C:\Python27\lib\site-packages\numpy\f2py\src\fortranobject.c -> c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7
+copying C:\Python27\lib\site-packages\numpy\f2py\src\fortranobject.h -> c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7
+build_src: building npy-pkg config files
+running build_ext
+Cannot build msvcr library: "msvcr90d.dll" not found
+customize Mingw32CCompiler
+customize Mingw32CCompiler using build_ext
+customize Gnu95FCompiler
+Found executable C:\Program Files\mingw-w64\x86_64-5.2.0-posix-seh-rt_v4-rev0\mingw64\bin\gfortran.exe
+Found executable C:\Program Files\mingw-w64\x86_64-5.2.0-posix-seh-rt_v4-rev0\mingw64\bin\gfortran.exe
+customize Gnu95FCompiler using build_ext
+building 'xr_ref' extension
+compiling C sources
+C compiler: gcc -O2 -Wall -Wstrict-prototypes
+
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\Release
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit
+creating c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7
+compile options: '-DNPY_MINGW_USE_CUSTOM_MSVCR -D__MSVCRT_VERSION__=0x0900 -Ic:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7 -IC:\Python27\lib\site-packages\numpy\core\include -IC:\Python27\include -IC:\Python27\PC -c'
+gcc -O2 -Wall -Wstrict-prototypes -DNPY_MINGW_USE_CUSTOM_MSVCR -D__MSVCRT_VERSION__=0x0900 -Ic:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7 -IC:\Python27\lib\site-packages\numpy\core\include -IC:\Python27\include -IC:\Python27\PC -c c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.c -o c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o
+Found executable C:\Program Files\mingw-w64\x86_64-5.2.0-posix-seh-rt_v4-rev0\mingw64\bin\gcc.exe
+gcc -O2 -Wall -Wstrict-prototypes -DNPY_MINGW_USE_CUSTOM_MSVCR -D__MSVCRT_VERSION__=0x0900 -Ic:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7 -IC:\Python27\lib\site-packages\numpy\core\include -IC:\Python27\include -IC:\Python27\PC -c c:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.c -o c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o
+compiling Fortran sources
+Fortran f77 compiler: C:\Program Files\mingw-w64\x86_64-5.2.0-posix-seh-rt_v4-rev0\mingw64\bin\gfortran.exe -Wall -g -ffixed-form -fno-second-underscore -O3 -funroll-loops
+Fortran f90 compiler: C:\Program Files\mingw-w64\x86_64-5.2.0-posix-seh-rt_v4-rev0\mingw64\bin\gfortran.exe -Wall -g -fno-second-underscore -O3 -funroll-loops
+Fortran fix compiler: C:\Program Files\mingw-w64\x86_64-5.2.0-posix-seh-rt_v4-rev0\mingw64\bin\gfortran.exe -Wall -g -ffixed-form -fno-second-underscore -Wall -g -fno-second-underscore -O3 -funroll-loops
+compile options: '-Ic:\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7 -IC:\Python27\lib\site-packages\numpy\core\include -IC:\Python27\include -IC:\Python27\PC -c'
+gfortran.exe:f90: xr_ref.f90
+C:\Program Files\mingw-w64\x86_64-5.2.0-posix-seh-rt_v4-rev0\mingw64\bin\gfortran.exe -Wall -g -Wall -g -shared c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o c:\users\b82384\appdata\local\temp\tmphxlfit\Release\xr_ref.o -L"C:\Program Files\mingw-w64\x86_64-5.2.0-posix-seh-rt_v4-rev0\mingw64\lib\gcc\x86_64-w64-mingw32\5.2.0" -LC:\Python27\libs -LC:\Python27\PCbuild -lpython27 -lgfortran -o .\xr_ref.pyd
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1a): undefined reference to `__imp_PyFloat_Type'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x26): undefined reference to `__imp_PyType_IsSubtype'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x55): undefined reference to `__imp_PyNumber_Float'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x97): undefined reference to `__imp_PyComplex_Type'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xbc): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xd3): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xec): undefined reference to `__imp_PyObject_GetAttrString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xfa): undefined reference to `__imp_PyErr_Clear'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x154): undefined reference to `__imp_PySequence_Check'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x167): undefined reference to `__imp_PySequence_GetItem'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x185): undefined reference to `__imp_PyNumber_Int'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1c7): undefined reference to `__imp_PyComplex_Type'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1d2): undefined reference to `__imp_PyType_IsSubtype'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1ec): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x203): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x21c): undefined reference to `__imp_PyObject_GetAttrString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x22a): undefined reference to `__imp_PyErr_Clear'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x265): undefined reference to `__imp_PySequence_Check'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x278): undefined reference to `__imp_PySequence_GetItem'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2c6): undefined reference to `__imp__Py_NoneStruct'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x41c): undefined reference to `__imp_PyArg_ParseTupleAndKeywords'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x610): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x652): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x66f): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x6b2): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x6cf): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x86f): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x92f): undefined reference to `__imp_Py_BuildValue'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x95e): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x97b): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x986): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x9a3): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x9cc): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x9ee): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xa16): undefined reference to `__imp__Py_NoneStruct'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xb6b): undefined reference to `__imp_PyArg_ParseTupleAndKeywords'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xe8e): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xfa2): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xfbb): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xfc6): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0xfe3): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x101a): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x10ac): undefined reference to `__imp_Py_BuildValue'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x10db): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x10f8): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1112): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x112f): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x115b): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1178): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1188): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x11aa): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x11d6): undefined reference to `__imp__Py_NoneStruct'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x132b): undefined reference to `__imp_PyArg_ParseTupleAndKeywords'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1650): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1762): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x177b): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1786): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x17a3): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x17da): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x186c): undefined reference to `__imp_Py_BuildValue'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x189b): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x18b8): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x18d2): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x18ef): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x191b): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1938): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1948): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x196a): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1996): undefined reference to `__imp__Py_NoneStruct'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1b0b): undefined reference to `__imp_PyArg_ParseTupleAndKeywords'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1e99): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1fd2): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1feb): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x1ff6): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2013): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x204a): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x20d7): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x20f4): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2102): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x211f): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2149): undefined reference to `__imp_Py_BuildValue'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x218a): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x21a7): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x21d1): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x21ee): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2201): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2226): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2265): undefined reference to `__imp_Py_InitModule4'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x226c): undefined reference to `__imp_PyType_Type'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2287): undefined reference to `__imp_PyImport_ImportModule'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x22a3): undefined reference to `__imp_PyObject_GetAttrString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x22bb): undefined reference to `__imp_PyCObject_Type'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x22c8): undefined reference to `__imp_PyExc_RuntimeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x22d6): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x22e4): undefined reference to `__imp_PyExc_ImportError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x22f3): undefined reference to `__imp_PyErr_Print'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2335): undefined reference to `__imp_PyCObject_AsVoidPtr'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2395): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x23a1): undefined reference to `__imp_PyExc_ImportError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x23b9): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x23c5): undefined reference to `__imp_PyModule_GetDict'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x23cc): undefined reference to `__imp_PyString_FromString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x23e9): undefined reference to `__imp_PyDict_SetItemString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x241b): undefined reference to `__imp_PyErr_NewException'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x24b5): undefined reference to `__imp_PyExc_RuntimeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x24be): undefined reference to `__imp_PyErr_Format'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x24c5): undefined reference to `__imp_PyExc_ImportError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x24cc): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x24d8): undefined reference to `__imp_PyExc_ImportError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x24e6): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2516): undefined reference to `__imp_PyExc_RuntimeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x251f): undefined reference to `__imp_PyErr_Format'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2526): undefined reference to `__imp_PyExc_ImportError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x252d): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2539): undefined reference to `__imp_PyExc_AttributeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2547): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2553): undefined reference to `__imp_PyExc_ImportError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2568): undefined reference to `__imp_PyExc_RuntimeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2576): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\xr_refmodule.o:xr_refmodule.c:(.text+0x2582): undefined reference to `__imp_PyExc_ImportError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x3e): undefined reference to `__imp_PyObject_GetAttrString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x47): undefined reference to `__imp_PyErr_Clear'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x66): undefined reference to `__imp_PyString_FromString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x95): undefined reference to `__imp_PyString_AsString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xa5): undefined reference to `__imp_PyString_FromFormat'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xbf): undefined reference to `__imp_PyString_FromString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xf8): undefined reference to `__imp_PyMem_Free'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x703): undefined reference to `__imp_PyExc_TypeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x713): undefined reference to `__imp_PyErr_Format'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x721): undefined reference to `__imp_PyExc_RuntimeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x731): undefined reference to `__imp_PyErr_Format'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x764): undefined reference to `__imp_PyDict_GetItemString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x91f): undefined reference to `__imp_Py_FindMethod'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x93f): undefined reference to `__imp_PyString_FromString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xa2b): undefined reference to `__imp_PyString_ConcatAndDel'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xb43): undefined reference to `__imp_PyDict_SetItemString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xd67): undefined reference to `__imp__Py_NoneStruct'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xdef): undefined reference to `__imp_PyCObject_FromVoidPtr'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xe02): undefined reference to `__imp_PyDict_SetItemString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xf40): undefined reference to `__imp_PyDict_SetItemString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xf69): undefined reference to `__imp_PyErr_Occurred'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xf74): undefined reference to `__imp_PyErr_Print'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xf7a): undefined reference to `__imp_PyErr_Clear'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xfa2): undefined reference to `__imp__PyObject_New'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0xfb0): undefined reference to `__imp_PyDict_New'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1003): undefined reference to `__imp__PyObject_New'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1015): undefined reference to `__imp_PyDict_New'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x105c): undefined reference to `__imp_PyDict_SetItemString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1234): undefined reference to `__imp__Py_NoneStruct'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1299): undefined reference to `__imp_PyType_IsSubtype'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x175e): undefined reference to `__imp_PyExc_ValueError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x176a): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1907): undefined reference to `__imp_PyExc_TypeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1919): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1cc4): undefined reference to `__imp__Py_NoneStruct'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1dfa): undefined reference to `__imp_PyDict_SetItemString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1e2a): undefined reference to `__imp_PyDict_DelItemString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1e35): undefined reference to `__imp_PyExc_AttributeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1e49): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1ef2): undefined reference to `__imp_PyDict_New'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1f13): undefined reference to `__imp_PyExc_AttributeError'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1f27): undefined reference to `__imp_PyErr_SetString'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1fa3): undefined reference to `__imp_PyCObject_FromVoidPtr'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1fb3): undefined reference to `__imp_PyCObject_AsVoidPtr'
+c:\users\b82384\appdata\local\temp\tmphxlfit\Release\users\b82384\appdata\local\temp\tmphxlfit\src.win32-2.7\fortranobject.o:fortranobject.c:(.text+0x1fc3): undefined reference to `__imp_PyCObject_Type'
+collect2.exe: error: ld returned 1 exit status

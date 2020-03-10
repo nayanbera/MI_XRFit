@@ -1,0 +1,48 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module edp_gen ! in 
+    interface  ! in :edp_gen
+        subroutine sphere(r,rho,rcore,rcoresig,rhoc,ls,rhos,n,m) ! in :edp_gen:edp_gen.f90
+            double precision dimension(n + 1), intent(in) :: r
+            double precision dimension(n + 1),depend(n), intent(out) :: rho
+            double precision, intent(in) :: rcore
+            double precision, intent(in) :: rcoresig
+            double precision, intent(in) :: rhoc
+            double precision dimension(m + 1), intent(in) :: ls
+            double precision dimension(m + 1),depend(m), intent(in) :: rhos
+            integer, optional,check((len(r)-1)>=n),depend(r) :: n=(len(r)-1)
+            integer, optional,check((len(ls)-1)>=m),depend(ls) :: m=(len(ls)-1)
+        end subroutine sphere
+        subroutine sphere_z(z,rho,rcore,rcoresig,rhoc,ls,rhos,n,m) ! in :edp_gen:edp_gen.f90
+            double precision dimension(n + 1), intent(in) :: z
+            double precision dimension(n + 1),depend(n), intent(out) :: rho
+            double precision, intent(in) :: rcore
+            double precision, intent(in) :: rcoresig
+            double precision, intent(in) :: rhoc
+            double precision dimension(m + 1), intent(in) :: ls
+            double precision dimension(m + 1),depend(m), intent(in) :: rhos
+            integer, optional,check((len(z)-1)>=n),depend(z) :: n=(len(z)-1)
+            integer, optional,check((len(ls)-1)>=m),depend(ls) :: m=(len(ls)-1)
+        end subroutine sphere_z
+        subroutine sphere_zint(z,rho,z0,rhoint,rcore,rcoresig,rhoc,ls,rhos,align,cov,sigcap,n,m) ! in :edp_gen:edp_gen.f90
+            double precision dimension(n + 1), intent(in) :: z
+            double precision dimension(n + 1),depend(n), intent(out) :: rho
+            double precision, intent(in) :: z0
+            double precision dimension(2), intent(in) :: rhoint
+            double precision, intent(in) :: rcore
+            double precision, intent(in) :: rcoresig
+            double precision, intent(in) :: rhoc
+            double precision dimension(m + 1), intent(in) :: ls
+            double precision dimension(m + 1),depend(m), intent(in) :: rhos
+            double precision, intent(in) :: align
+            double precision, intent(in) :: cov
+            double precision, intent(in) :: sigcap
+            integer, optional,check((len(z)-1)>=n),depend(z) :: n=(len(z)-1)
+            integer, optional,check((len(ls)-1)>=m),depend(ls) :: m=(len(ls)-1)
+        end subroutine sphere_zint
+    end interface 
+end python module edp_gen
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
